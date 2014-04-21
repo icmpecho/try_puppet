@@ -16,5 +16,5 @@ ssh_authorized_key { "git":
     name => "Ping@abctech-thailand.com",
     target => "/var/git/.ssh/authorized_keys",
     type => rsa,
-    require => File["var/git"],
+    require => File["/var/git"],
 }
