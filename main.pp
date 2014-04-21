@@ -19,3 +19,7 @@ ssh_authorized_key { "git":
     type => rsa,
     require => File["/var/git"],
 }
+
+package { "git":
+    ensure => "present",
+}
